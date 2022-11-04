@@ -19,7 +19,7 @@ const Result = () => {
     useEffect(()=>{
         const isValidUser=JSON.parse(localStorage.getItem("is_valid_user"))
         if (isValidUser===null || isValidUser===false){
-           console.log(isValidUser)
+        //    console.log(isValidUser)
            navigate("/login")
          }
        }
