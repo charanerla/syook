@@ -73,7 +73,7 @@ const Login = props => {
   )
 
   if (isValidUser===null || isValidUser===false){
-    console.log(isValidUser)
+    // console.log(isValidUser)
     return renderingContent()
   }
   else{
