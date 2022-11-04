@@ -1,0 +1,38 @@
+.reault-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.result-responsive-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+@media all and (min-width:768px){
+    .result-responsive-container{
+        width: 70vw;
+    }
+}
+.yet-to-pool{
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pool-results{
+    height: 90vh;
+    padding: 20px;
+}
+.pool-table{
+    width: 100%;
+    border: 1;
+}
+.table-data{
+    text-align: center;
+}

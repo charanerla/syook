@@ -1,0 +1,88 @@
+.food-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+@media all and (max-width:567px){
+    .food-item{
+        width: 100%;
+        margin-right: 0px;
+    }
+}
+@media all and (min-width:992px){
+    .food-item{
+        margin-right: 0px;
+    }
+}
+.dish-img{
+    border-radius: 8px;
+    width: 250px;
+    height: 200px;
+}
+@media all and (max-width:567px){
+    .dish-img{
+        width: 100%;
+        height: 50%;
+    }
+}
+.description-container{
+    padding-left: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.dish-name{
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin: 6px 0px 0px 0px;
+    padding:0px;
+    max-width: 250px;
+}
+.dish-description{
+    font-size: 14px;
+    width: 250px;
+    padding:0px;
+    margin-bottom: 0px;
+}
+@media all and (max-width:567px){
+    .dish-description{
+        width: 100%;
+    }
+}
+
+.give-rank{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+.active-rank-btn{
+    background-color: rgb(53, 53, 228);
+    padding: 6px 8px 6px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    color: #ffffff;
+    font-size: 13px;
+    margin-right: 10px;
+}
+.unactive-rank-btn{
+    padding: 6px 8px 6px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid rgb(53, 53, 228);
+    background-color: #ffffff;
+    color: rgb(53, 53, 228);
+    font-size: 13px;
+    margin-right: 10px;
+}
