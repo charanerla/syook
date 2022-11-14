@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Result from "./components/Result"
 import PoolContext from "./context/PoolContext"
 import FoodItems from "./db.json"
+import PageNotFound from "./components/PageNotFound";
 import './App.css';
 
 const newData = FoodItems.map(obj => ({...obj,rank:0}))
@@ -18,6 +19,7 @@ const App = () => {
             <Route exact path="/login" element={<Login/>}/>
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/result" element={<Result/>} />
+            <Route path="*" element={<PageNotFound/>} />
         </Routes>
         </PoolContext.Provider>
     )
