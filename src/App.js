@@ -1,5 +1,5 @@
 import React,{ useState} from "react";
-import { Route,Routes } from "react-router-dom";
+import { Route,Routes,Navigate } from "react-router-dom";
 import Login from "./components/Login"
 import Home from "./components/Home";
 import Result from "./components/Result"
@@ -19,7 +19,9 @@ const App = () => {
             <Route exact path="/login" element={<Login/>}/>
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/result" element={<Result/>} />
-            <Route path="*" element={<PageNotFound/>} />
+            <Route exact path="/random-page" element={<PageNotFound/>} />
+            <Route path="*" element={<Navigate to="/random-page" replace />}
+    />
         </Routes>
         </PoolContext.Provider>
     )
