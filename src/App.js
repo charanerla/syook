@@ -20,8 +20,7 @@ const App = () => {
             <Route exact path="/" element={<Home/>} />
             <Route exact path="/result" element={<Result/>} />
             <Route exact path="/random-page" element={<PageNotFound/>} />
-            <Route path="*" element={<Navigate to="/random-page" replace />}
-    />
+            <Route path="*" element={<Navigate to="/random-page" replace />}/>
         </Routes>
         </PoolContext.Provider>
     )
